@@ -1,0 +1,78 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.scrollElement {
+    position: absolute;
+    height: 6000px;
+    width: 100px;
+    top: 0;
+    z-index: 0;
+}
+
+.btn {
+    position: fixed;
+    bottom: 5%;
+    right: 0px;
+    transform: translateX(-50%);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7em;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 11;
+    font-weight: 600;
+    box-shadow: 4px 4px 8px rgb(107, 107, 107);
+}
+
+.btn_works {
+    left: 100px;
+    right: unset;
+    text-decoration: none;
+}
+
+.btn_name {
+    right:-30px;
+    top: 30px;
+    bottom: unset;
+    left: unset;
+    background: #11bbff;
+    
+    color: #1b1734;
+    border: 2px solid #1b1734;
+    box-shadow: 4px 4px 8px rgba(16, 14, 32, 0.6);
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: #1b1734;
+    border: 2px solid #1b1734;
+}
